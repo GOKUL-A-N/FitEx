@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .text-gradient{
+  background: -webkit-linear-gradient(0deg,#CF0A17 0%, #0ECFBC 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+body{
+  background: #252c31;
+  font-family: 'Roboto', sans-serif;
+}
+
+.Hero{
+  background: url(./assets/gymBackground.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.text{
+  color: #f32112;
+}
+
+#text{
+  font-weight: bolder;
+  color: #fff;
+}
+.text-main{
+  font-size: 60px;
+  color: #fff;
+}

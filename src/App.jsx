@@ -1,9 +1,19 @@
 import React from 'react';
-import Hero from './components/Hero';
+import {Routes,Route} from "react-router-dom"
+import Home from './components/Home';
+import UpperBody from "./pages/UpperBody";
+import LowerBody from "./pages/LowerBody";
 
 const App = () => {
   return (
-    <div className='text-gradient'><Hero /></div>
+    <div>
+        <Routes>
+          <Route path="/" element={<Home />}>
+            <Route index  element={<UpperBody />} />
+            <Route path="LowerBody" element={<LowerBody />} />
+          </Route>
+        </Routes>
+    </div>
   )
 }
 

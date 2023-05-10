@@ -2,7 +2,7 @@ import React from 'react'
 
 const Abs = () => {
   return (
-    <div>Abs</div>
+    <div className='h-screen'>Abs</div>
   )
 }
 

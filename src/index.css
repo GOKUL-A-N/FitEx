@@ -32,7 +32,7 @@ body{
   color: #fff;
 }
 .text-main{
-  font-size: 60px;
+  font-size: 50px;
   color: #fff;
 }
 .upper-img{
@@ -73,6 +73,71 @@ body{
   background-color: var(--c);
   color: #fff;
 }
-.upper-background{
-  
+.Upper-button{
+  position: relative;
+  height: 65px;
+  width: 610px;
+  margin: 5px 40px ;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  background: #0d0d0d;
+  overflow: hidden;
+  transition: 0.6s;
+}
+.Upper-button:first-child{
+  color: #f32112;
+  border-color: #f32112;
+}
+.Upper-button:last-child{
+  color: #f32112;
+  border-color: #f32112;
+}
+.Upper-button:before, .Upper-button:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  filter: blur(30px);
+  opacity: 0.4;
+  transition: 0.6s;
+}
+.Uppper-button:before{
+  width: 60px;
+  background: rgba(255,255,255,0.6);
+  transform: translateX(-130px) skewX(-45deg);
+}
+.Upper-button:after{
+  width: 30px;
+  background: rgba(255,255,255,0.6);
+  transform: translateX(-130px) skewX(-45deg);
+}
+.Upper-button:hover:before,
+.Upper-button:hover:after{
+  opacity: 0.6;
+  transform: translateX(320px) skewX(-45deg);
+}
+.Upper-button:hover{
+  color: #f2f2f2;
+}
+.Upper-button:hover:first-child{
+  background: #f32112;
+}
+.Upper-button:hover:last-child{
+  background: #f32112;
+}
+.card {
+
+background: rgba(240, 233, 233, 0.17);
+border-radius: 5px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(240, 233, 233, 0.98);
 }

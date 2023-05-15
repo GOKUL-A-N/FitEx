@@ -5,6 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root{
+  --red:#f32112;
+  --black-bg:#252c31;
+}
 /* .text-gradient{
   background: -webkit-linear-gradient(0deg,#CF0A17 0%, #0ECFBC 50%);
   -webkit-background-clip: text;
@@ -12,7 +17,7 @@
 } */
 
 body{
-  background: #252c31;
+  background: var(--black-bg);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -24,7 +29,7 @@ body{
   background-size: cover;
 }
 .text{
-  color: #f32112;
+  color: var(--red);
 }
 
 #text{
@@ -51,7 +56,7 @@ body{
   border: none;
 }
 .button {
-  --c:  #f32112; /* the color*/
+  --c:  var(--red); /* the color*/
   
   box-shadow: 0 0 0 .1em inset var(--c); 
   --_g: linear-gradient(var(--c) 0 0) no-repeat;
@@ -92,11 +97,11 @@ body{
 }
 .Upper-button:first-child{
   color: #fff;
-  border-color: #f32112;
+  border-color: var(--red);
 }
 .Upper-button:last-child{
   color: #fff;
-  border-color: #f32112;
+  border-color: var(--red);
 }
 .Upper-button:before, .Upper-button:after{
   position: absolute;
@@ -127,17 +132,8 @@ body{
   color: #f2f2f2;
 }
 .Upper-button:hover:first-child{
-  background: #f32112;
+  background: var(--red);
 }
 .Upper-button:hover:last-child{
-  background: #f32112;
-}
-.card {
-
-background: rgba(240, 233, 233, 0.17);
-border-radius: 5px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(0px);
--webkit-backdrop-filter: blur(0px);
-border: 1px solid rgba(240, 233, 233, 0.98);
+  background: var(--red);
 }

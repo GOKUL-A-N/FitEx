@@ -3,8 +3,8 @@ import {Link ,Outlet} from "react-router-dom";
 
 const UpperBody = () => {
   return (
-    <div className=' overflow-auto'>
-      <div className='flex-1  justify-center items-center '>
+    <div className=' overflow-auto '>
+      <div className='flex-1  justify-center items-center mb-[50px]'>
       <h1 className='p-[50px] text-center text-main ' >UPPER BODY WORKOUTS</h1>
         <div className='flex-1 flex flex-col justify-center items-center '>
             
@@ -19,6 +19,7 @@ const UpperBody = () => {
             <Link to="/UpperBody/traps"><button className='Upper-button'>Traps</button></Link>
         </div>
       </div>
+      <hr className='w-[100%] h-3 flex justify-center self-center'/>
         <Outlet />
     </div>
   )

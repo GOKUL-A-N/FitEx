@@ -50,7 +50,7 @@ body{
 }
 .text-main{
   font-size: 50px;
-  color: #E9F1F7;
+  color: #F2C14E;
 }
 .upper-img{
   background: url(./assets/UpperBodyImg.jpg) no-repeat center center fixed; 
@@ -68,7 +68,7 @@ body{
   border: none;
 }
 .button {
-  --c:  #e2e2e2; /* the color*/
+  --c:  #F2C14E; /* the color*/
   
   box-shadow: 0 0 0 .1em inset var(--c); 
   --_g: linear-gradient(var(--c) 0 0) no-repeat;

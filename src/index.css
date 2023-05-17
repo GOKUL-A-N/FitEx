@@ -7,8 +7,8 @@
 
 
 :root{
-  --red:#f32112;
-  --black-bg:#252c31;
+  --red: linear-gradient(to right,#E1E5F2,#FFFFFF);
+  --black-bg: linear-gradient(to right,#022B3A,#1F7A8C);
 }
 /* .text-gradient{
   background: -webkit-linear-gradient(0deg,#CF0A17 0%, #0ECFBC 50%);
@@ -29,16 +29,28 @@ body{
   background-size: cover;
 }
 .text{
-  color: var(--red);
+  background-color: #1F7A8C;
+  background-image: linear-gradient(45deg, #E1E5F2, #1F7A8C);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
 }
 
 #text{
   font-weight: bolder;
-  color: #fff;
+  background-color: #E1E5F2;
+  background-image: linear-gradient(45deg, #E1E5F2, #BFDBF7);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
 }
 .text-main{
   font-size: 50px;
-  color: #fff;
+  color: #E9F1F7;
 }
 .upper-img{
   background: url(./assets/UpperBodyImg.jpg) no-repeat center center fixed; 
@@ -56,7 +68,7 @@ body{
   border: none;
 }
 .button {
-  --c:  var(--red); /* the color*/
+  --c:  #e2e2e2; /* the color*/
   
   box-shadow: 0 0 0 .1em inset var(--c); 
   --_g: linear-gradient(var(--c) 0 0) no-repeat;
@@ -129,7 +141,7 @@ body{
   transform: translateX(320px) skewX(-45deg);
 }
 .Upper-button:hover{
-  color: #f2f2f2;
+  color: #0f0c0c;
 }
 .Upper-button:hover:first-child{
   background: var(--red);

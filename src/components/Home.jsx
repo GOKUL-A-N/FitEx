@@ -6,7 +6,7 @@ const Home = () => {
     <div className='overflow-hidden'>
       <div className='Hero flex  h-screen w-[100%]'>
       <div className='relative top-4 left-4 w-6 h-6'>
-        <h3 className='font-bold text text-3xl'>Fit<span className=''>Ex</span></h3>
+        <h3 className='font-bold text-slate-50 text-2xl'>Fit<span className=''>Ex</span></h3>
       </div>
       <div className='flex-1  flex flex-col mt-[100px] justify-center items-center '>
           <h1 className="text-main text-7xl ">PUSH HARD FOR A BETTER TOMORROW</h1>
